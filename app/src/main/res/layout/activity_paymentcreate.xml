@@ -1,0 +1,243 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_try"
+    tools:context=".paymentcreate">
+
+    <LinearLayout
+        android:layout_width="54dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logo_button"
+            android:layout_width="53dp"
+            android:layout_height="match_parent"
+            android:onClick="onClickLogoButton"
+            app:srcCompat="@mipmap/resize_logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="160dp"
+        android:layout_height="230dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="301dp"
+        android:background="@drawable/round_corner"
+        android:focusable="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_editor_absoluteY="200dp">
+
+        <TextView
+            android:id="@+id/textViewallpayments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="3dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="All Payments"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_pending_allpayments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="3dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Loading..."
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/all_payments_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/round_corner"
+            app:srcCompat="@mipmap/rupee_hands" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="160dp"
+        android:layout_height="230dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="301dp"
+        android:background="@drawable/round_corner2"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_editor_absoluteY="200dp">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="3dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="My Payments"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_pending_mypayments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="3dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Loading..."
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/my_payments_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/round_corner2"
+            app:srcCompat="@mipmap/rupee_hand" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="160dp"
+        android:layout_height="230dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="457dp"
+        android:layout_marginEnd="224dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/round_corner3"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="3dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Transaction History"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/transactions_history_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="3dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Loading..."
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/transaction_history_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/round_corner2"
+            app:srcCompat="@mipmap/transaction_history" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="160dp"
+        android:layout_height="230dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="457dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/round_corner4"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout5"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="3dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="Create New Payment"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/create_new_entry_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/round_corner2"
+            app:srcCompat="@mipmap/new_payment" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

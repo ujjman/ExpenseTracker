@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_transaction_history"
+    tools:context=".TransactionHistory">
+    <RelativeLayout
+        android:id="@+id/loadingPanel_transactionHistory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/allPaymentsRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="290dp"
+        android:layout_marginEnd="34dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="670dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageView
+            android:id="@+id/back_button33"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:onClick="backButtonOnClick"
+            app:srcCompat="?android:attr/actionModeCloseDrawable" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/round_edittext"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <AutoCompleteTextView
+            android:id="@+id/search_transactionhistory_textview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableLeft="?android:attr/actionModeWebSearchDrawable"
+            android:hint=" Search in Transaction History"
+            android:paddingLeft="10dp" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

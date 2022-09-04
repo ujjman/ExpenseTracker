@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ujjman.money.expensetracker">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <supports-screens android:anyDensity="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_logo_round"
+        android:supportsRtl="true">
+        <activity
+            android:name=".EditTransactionHistory"
+            android:theme="@style/Theme.ExpenseTracker.EditTransactionHistory"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".TransactionHistory"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ExpenseTracker.TransactionHistory"
+            android:windowSoftInputMode="adjustPan|adjustResize"
+            android:exported="false" />
+        <activity
+            android:name=".MyPayments"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            android:theme="@style/Theme.ExpenseTracker.AllPayments"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".Register"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            android:theme="@style/Theme.ExpenseTracker.Login" />
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            android:theme="@style/Theme.ExpenseTracker.Login" />
+        <activity
+            android:name=".AllPayments"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            android:theme="@style/Theme.ExpenseTracker.AllPayments"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".EditPaymentEntry"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            android:theme="@style/Theme.ExpenseTracker.EditPaymentEntry" />
+        <activity
+            android:name=".NewPayment"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            android:theme="@style/Theme.ExpenseTracker.NewPayment" />
+        <activity
+            android:name=".paymentcreate"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustResize"
+            android:theme="@style/Theme.ExpenseTracker.paymentcreate" />
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:theme="@style/Theme.ExpenseTracker.SplashScreen"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

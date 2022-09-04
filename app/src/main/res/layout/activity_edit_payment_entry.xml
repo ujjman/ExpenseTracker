@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_edit"
+    tools:context=".EditPaymentEntry">
+
+    <ImageView
+        android:id="@+id/back_button2"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="683dp"
+        android:onClick="backButtonOnClick"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="422dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="109dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="207dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sender Name"
+            android:theme="@style/MyFilledBox">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/from_editpayment_textview"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_edittext"
+                android:inputType="text"
+                android:paddingLeft="15dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Sender Phone Number"
+            android:theme="@style/MyFilledBox">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/sender_phoneno_editpayment_textview"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_edittext"
+                android:inputType="text"
+                android:paddingLeft="15dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Receiver Name"
+            android:theme="@style/MyFilledBox">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/to_editpayment_textview"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_edittext"
+                android:inputType="text"
+                android:paddingLeft="15dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Receiver Phone Number"
+            android:theme="@style/MyFilledBox">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/receiver_phoneno_editpayment_textview"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_edittext"
+                android:inputType="text"
+                android:paddingLeft="15dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Amount in Rs."
+            android:theme="@style/MyFilledBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/amount_editpayment_textview"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_edittext"
+                android:inputType="text"
+                android:paddingLeft="15dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="10dp"
+            android:hint="Description"
+            android:theme="@style/MyFilledBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/description_editpayment_textview"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/round_edittext" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="230dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="637dp"
+        android:gravity="center_horizontal"
+        android:text="Edit Payment Entry"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="143dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/update_button"
+            android:layout_width="137dp"
+            android:layout_height="62dp"
+            android:backgroundTint="#343CD8"
+            android:onClick="onClickUpdateButton"
+            android:text="Update"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:cornerRadius="40dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="137dp"
+            android:layout_height="62dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="#343CD8"
+            android:onClick="onClickDeleteButton"
+            android:text="Delete"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:cornerRadius="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="590dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="66dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="103dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="Pay Using : "
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/pay_gpay"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_button"
+            android:onClick="onClickGpayButton"
+            android:scaleType="center"
+            android:src="@drawable/gpay_logo"
+            android:text="Button" />
+
+
+        <ImageButton
+            android:id="@+id/pay_paytm"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_button"
+            android:onClick="onClickPaytmButton"
+            android:scaleType="center"
+            android:src="@drawable/paytm_logo"
+            android:text="Button" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="670dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Is Payment done? ">
+        </TextView>
+        <TextView
+            android:id="@+id/no_switch_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textSize="20sp"
+            android:textColor="#ec1c24"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp">
+
+        </TextView>
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_paymentdone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:checked="false"
+            android:hapticFeedbackEnabled="true"
+            android:onClick="onClickSwitch"
+            android:textColor="#ec1c24"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:switchMinWidth="60dp" />
+        <TextView
+            android:id="@+id/yes_switch_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:textSize="22sp"
+            android:textColor="#2dff03"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
